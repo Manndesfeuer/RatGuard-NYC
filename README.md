@@ -36,6 +36,12 @@ isNightTime (bool)
 
 trashLevel (int, 0–100)
 
+>Trash Level	Meaning
+>0–30	Clean area
+>30–60	Moderate trash
+>60–80	High trash accumulation
+>80–100	Overflowing trash
+
 userReportedSightings (int)
 
 trapActivations (int) — optional, from physical smart traps
