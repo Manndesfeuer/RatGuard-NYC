@@ -1,10 +1,10 @@
-# RatGuard-NYC
-
-THE PROBLEM
+<h1> RatGuard-NYC</h1>
+<hr>
+<h4>THE PROBLEM</h4>
 
 New York City faces a persistent rat infestation that is most visible around trash-collection areas, subway entrances, and commercial zones. Rats multiply quickly and carry health risks, especially at night when trash bags accumulate. This problem affects public health, urban sanitation, and the overall quality of life.
-
-WHO IT AFFECTS
+<hr>
+<h4>WHO IT AFFECTS</h4>
 
 >Local residents
 
@@ -15,17 +15,19 @@ WHO IT AFFECTS
 >Sanitation workers
 
 >Public health officials
-
-SOLUTION OVERVIEW
+<hr>
+<h4>SOLUTION OVERVIEW</h4>
 
 
 A camera-based detection system that uses existing NYC street and subway cameras to identify rat activity and alert users before an infestation grows.
-
-ARCHITECTURE OVERVIEW
+<hr>
+<h3>ARCHITECTURE OVERVIEW</h3>
 Inputs
 
 These values come from two sources:
+<br>
 (1) AI analysis of city cameras, and
+<br>
 (2) user/environment data.
 
 detectedRats (int)
@@ -36,17 +38,24 @@ isNightTime (bool)
 
 trashLevel (int, 0–100)
 
->Trash Level	Meaning
->0–30	Clean area
->30–60	Moderate trash
->60–80	High trash accumulation
->80–100	Overflowing trash
+<b><i>Trash Level	Meaning</i></b>
 
+<br>
+<p>
+    <i>
+>00-30  Clean Area
+<br>
+>30–60	Moderate trash
+<br>
+>60–80	High trash accumulation
+<br>
+>80–100	Overflowing trash
+</i></p>
 userReportedSightings (int)
 
 trapActivations (int) — optional, from physical smart traps
-
-Outputs
+<hr>
+<h3>Outputs</h3>
 
 Rat Risk Level: LOW / MEDIUM / HIGH
 
@@ -57,16 +66,22 @@ Recommended actions:
 “Alert sanitation services.”
 
 “Monitor area during nighttime hours.”
-
-Data Needed (C++ Variables)
+<hr>
+<h3>Data Needed <i>(C++ Variables)</i></h3>
+<br><br>
 int detectedRats;
+<br>
 bool isNightTime;
+<br>
 int trashLevel;
+<br>
 int userReportedSightings;
+<br>
 int trapActivations;
+<br>
 string ratRiskLevel;
-
-3. Core Logic (Pseudocode)
+<hr>
+<h3>Core Logic (Pseudocode)<h3>
 START
 
 INPUT detectedRats
